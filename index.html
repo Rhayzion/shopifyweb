@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback app</title>
+    <title>Feedback App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
-<!--header-->
-
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="logoarea">
-                <span>Feedo</span>
-            </div>
-
+                <h1>Feedo</h1>  </div>
             <div class="nav-list">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
             </div>
         </nav>
     </header>
 
-
-    <section class="carousel">
-        <div class="list">
-            <div class="items">
-                <figure>
-                    <img src="" alt="">
-                </figure>
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-list">
+                <div class="carousel-item">
+                    <figure>
+                        <img src="" alt="Slide 1">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="" alt="Slide 2">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="" alt="Slide 3">
+                    </figure>
+                </div>
+            </div>
+            <div class="carousel-arrows">
+                <button class="arrow prev-arrow">❮</button>  <button class="arrow next-arrow">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                 <span class="indicator active-indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+            <div class="carousel-description">
+                <p>Description for slide 1.</p>
             </div>
         </div>
-        <div class="arrows"></div>
-        <div class="indicators"></div>
-        <div class="descrption"></div>
     </section>
     
+
+    <script src="app.js"</script>
 </body>
 </html>
